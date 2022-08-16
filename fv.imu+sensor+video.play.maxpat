@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 43.0, 100.0, 1248.0, 924.0 ],
+		"rect" : [ 34.0, 79.0, 1852.0, 967.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,17 +39,6 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-163",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 441.0, 299.0, 150.0, 20.0 ],
-					"text" : "ode"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-156",
 					"linecount" : 5,
@@ -298,10 +287,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 654.0, 787.0, 32.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~"
 				}
 
@@ -569,7 +554,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 502.0, 300.0, 121.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "10220.145261"
 				}
 
@@ -581,7 +565,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 629.0, 238.0, 150.0, 114.0 ],
+					"patching_rect" : [ 629.0, 238.0, 153.0, 114.0 ],
 					"text" : "format e.g.\n\"track 1 duration\"\nshould only be forwarded when duration is in the message.\nhowever, there has to be a more elegant way to do this..."
 				}
 
@@ -875,17 +859,12 @@
 					"bufferchooser_shape" : "buttons",
 					"bufferchooser_size" : 15,
 					"bufferchooser_visible" : 1,
-					"cursor_circleedgecolor" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"cursor_circlefillcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"cursor_circlefilled" : 1,
 					"cursor_circleheight" : 3.0,
 					"cursor_circlewidth" : 3.0,
 					"cursor_color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"cursor_followmouse" : 0,
-					"cursor_nearest" : 0,
-					"cursor_nearestcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"cursor_noringoffset" : 0,
-					"cursor_position" : 5092.880845416584634,
+					"cursor_position" : -1.0,
 					"cursor_shape" : "bar",
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 0,
@@ -907,7 +886,6 @@
 					"id" : "obj-88",
 					"layout" : 0,
 					"maxclass" : "imubu",
-					"mousewheelscroll" : 0,
 					"name" : "fv-mubu-player",
 					"numinlets" : 1,
 					"numoutlets" : 1,
@@ -945,7 +923,6 @@
 					"toolbar_size" : 30,
 					"toolbar_visible" : 1,
 					"useplaceholders" : 1,
-					"verbose" : 1,
 					"windresize" : 0
 				}
 
