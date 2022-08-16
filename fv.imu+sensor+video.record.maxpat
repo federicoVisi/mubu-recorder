@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -227,8 +227,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -791,6 +791,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 1799.5, 285.5, 96.0, 23.0 ],
 					"text_width" : 58.0
 				}
@@ -809,8 +810,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1133,6 +1134,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 1681.0, 285.5, 116.0, 23.0 ],
 					"text_width" : 32.0
 				}
@@ -1440,8 +1442,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1475,13 +1477,14 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-8",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 272.0, 339.0, 187.0, 22.0 ],
+									"patching_rect" : [ 272.0, 383.0, 187.0, 22.0 ],
 									"text" : "udpsend 10.1.105.14 5004 cnmat"
 								}
 
@@ -1493,8 +1496,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "FullPacket" ],
-									"patching_rect" : [ 47.0, 339.0, 121.0, 22.0 ],
-									"text" : "o.route /acc /gyro /a0"
+									"patching_rect" : [ 47.0, 383.0, 207.0, 22.0 ],
+									"text" : "o.route /extIMU/acc /extIMU/gyro /in1"
 								}
 
 							}
@@ -1515,7 +1518,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 47.0, 34.0, 285.0, 282.0 ],
+									"patching_rect" : [ 47.0, 34.0, 285.0, 306.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -1527,7 +1530,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 219.0, 395.0, 73.0, 22.0 ],
+									"patching_rect" : [ 219.0, 439.0, 73.0, 22.0 ],
 									"text" : "speedlim 10"
 								}
 
@@ -1539,7 +1542,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 47.0, 395.0, 73.0, 22.0 ],
+									"patching_rect" : [ 47.0, 439.0, 73.0, 22.0 ],
 									"text" : "speedlim 10"
 								}
 
@@ -1551,7 +1554,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 132.0, 395.0, 73.0, 22.0 ],
+									"patching_rect" : [ 132.0, 439.0, 73.0, 22.0 ],
 									"text" : "speedlim 10"
 								}
 
@@ -1564,7 +1567,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 415.0, 508.0, 30.0, 30.0 ]
+									"patching_rect" : [ 415.0, 552.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1578,7 +1581,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 10.5, 513.0, 75.0, 22.0 ],
+									"patching_rect" : [ 10.5, 557.0, 75.0, 22.0 ],
 									"text" : "r recordopts"
 								}
 
@@ -1593,7 +1596,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 219.0, 508.0, 177.0, 23.0 ],
+									"patching_rect" : [ 219.0, 552.0, 177.0, 23.0 ],
 									"text" : "mubu.record fv-myo sens_a0"
 								}
 
@@ -1608,7 +1611,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 132.0, 469.0, 153.0, 23.0 ],
+									"patching_rect" : [ 132.0, 513.0, 153.0, 23.0 ],
 									"text" : "mubu.record fv-myo gyro"
 								}
 
@@ -1623,7 +1626,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 47.0, 437.0, 148.0, 23.0 ],
+									"patching_rect" : [ 47.0, 481.0, 148.0, 23.0 ],
 									"text" : "mubu.record fv-myo acc"
 								}
 
@@ -1865,8 +1868,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2722,7 +2725,7 @@
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 0,
 					"cursor_visible" : 1,
-					"domain_bounds" : [ 0.0, 59619.354166666664241 ],
+					"domain_bounds" : [ 0.0, 1.0 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -3685,9 +3688,10 @@
 		"parameters" : 		{
 			"obj-126::obj-4::obj-1" : [ "live.text[3]", "live.text", 0 ],
 			"obj-126::obj-4::obj-17" : [ "number[6]", "number[3]", 0 ],
+			"obj-126::obj-4::obj-18" : [ "number[14]", "number[14]", 0 ],
 			"obj-126::obj-4::obj-33" : [ "live.text[1]", "live.text", 0 ],
-			"obj-126::obj-4::obj-34" : [ "live.text[2]", "live.text", 0 ],
 			"obj-126::obj-4::obj-35" : [ "live.text[11]", "live.text", 0 ],
+			"obj-126::obj-4::obj-36" : [ "number[15]", "number[14]", 0 ],
 			"obj-126::obj-4::obj-38" : [ "live.text[13]", "live.text", 0 ],
 			"obj-126::obj-4::obj-39" : [ "live.text[10]", "live.text", 0 ],
 			"obj-126::obj-4::obj-41" : [ "live.text[9]", "live.text", 0 ],
@@ -3696,8 +3700,57 @@
 			"obj-126::obj-4::obj-44" : [ "live.text[14]", "live.text", 0 ],
 			"obj-126::obj-4::obj-45" : [ "live.text[12]", "live.text", 0 ],
 			"obj-126::obj-4::obj-46" : [ "number[1]", "number[3]", 0 ],
+			"obj-126::obj-4::obj-50" : [ "number[16]", "number[14]", 0 ],
+			"obj-126::obj-4::obj-57" : [ "number[19]", "number[14]", 0 ],
+			"obj-126::obj-4::obj-59" : [ "number[20]", "number[14]", 0 ],
+			"obj-126::obj-4::obj-67" : [ "number[23]", "number[14]", 0 ],
+			"obj-126::obj-4::obj-88" : [ "number[30]", "number[14]", 0 ],
+			"obj-126::obj-4::obj-95" : [ "number[33]", "number[14]", 0 ],
 			"obj-6" : [ "live.gain~", "live.gain~", 0 ],
 			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-126::obj-4::obj-1" : 				{
+					"parameter_longname" : "live.text[3]"
+				}
+,
+				"obj-126::obj-4::obj-33" : 				{
+					"parameter_longname" : "live.text[1]"
+				}
+,
+				"obj-126::obj-4::obj-35" : 				{
+					"parameter_longname" : "live.text[11]"
+				}
+,
+				"obj-126::obj-4::obj-38" : 				{
+					"parameter_longname" : "live.text[13]"
+				}
+,
+				"obj-126::obj-4::obj-39" : 				{
+					"parameter_longname" : "live.text[10]"
+				}
+,
+				"obj-126::obj-4::obj-41" : 				{
+					"parameter_longname" : "live.text[9]"
+				}
+,
+				"obj-126::obj-4::obj-42" : 				{
+					"parameter_longname" : "live.text[16]"
+				}
+,
+				"obj-126::obj-4::obj-43" : 				{
+					"parameter_longname" : "live.text[15]"
+				}
+,
+				"obj-126::obj-4::obj-44" : 				{
+					"parameter_longname" : "live.text[14]"
+				}
+,
+				"obj-126::obj-4::obj-45" : 				{
+					"parameter_longname" : "live.text[12]"
+				}
 
 			}
 ,
@@ -3706,21 +3759,14 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "GIMLeT.arduino.Nano33IoT.maxpat",
-				"bootpath" : "~/OneDrive - ltu.se/_FV_git/GitHub/interwoven-sound-spaces/Max",
-				"patcherrelativepath" : "../../../_FV_git/GitHub/interwoven-sound-spaces/Max",
+				"bootpath" : "~/OneDrive - ltu.se/_FV_git/GitHub/interwoven-sound-spaces/Max/modules/sensors",
+				"patcherrelativepath" : "../../../_FV_git/GitHub/interwoven-sound-spaces/Max/modules/sensors",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Gimlet_logo_solo.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/GIMLeT/media",
-				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/GIMLeT/media",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "fv.clickV3.maxpat",
-				"bootpath" : "~/OneDrive - ltu.se/Practice/_FV_Max/mubu recorder",
+				"bootpath" : "~/OneDrive - ltu.se/Practice/_FV_Max/mubu-recorder",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
